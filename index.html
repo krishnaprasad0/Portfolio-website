@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishnaprasad R</title>
+  <meta name="description"
+    content="Portfolio of Krishnaprasad R, a versatile Flutter Developer with 3+ years of experience building cross-platform mobile applications for Android, iOS, and Android TV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">KP<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link cta-btn">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="line-one">Krishnaprasad</span>
+        <span class="line-two">R<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-summary">
+        3+ years crafting high-performance cross-platform apps for Android, iOS &amp; Android TV.
+        Passionate about clean code, smooth animations &amp; pixel-perfect UI.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="viewWorkBtn">View My Work</a>
+        <button class="btn btn-secondary" id="heroResumeBtn">Download Resume</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Apps Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Dev Time Saved</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-ring-inner">
+          <div class="avatar-placeholder">
+            <img src="profile.jpg" alt="Krishnaprasad R — Flutter Developer" class="profile-photo" />
+          </div>
+        </div>
+      </div>
+      <div class="floating-chip chip-flutter">Flutter</div>
+      <div class="floating-chip chip-dart">Dart</div>
+      <div class="floating-chip chip-firebase">Firebase</div>
+      <div class="floating-chip chip-bloc">Bloc</div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>versatile and performance-driven Software Engineer</strong> with 3+ years of experience
+            in mobile application development using Flutter. I specialize in building scalable,
+            cross-platform applications for <strong>Android, iOS, and Android TV</strong>.
+          </p>
+          <p>
+            My proven expertise spans app performance optimization, payment gateway integration,
+            POS system development, and AI feature integration. I thrive in collaborative agile
+            environments and love working with designers and backend engineers to deliver
+            outstanding user experiences.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <strong>40% faster delivery</strong>
+                <span>vs native development</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">⚡</div>
+              <div>
+                <strong>30% performance boost</strong>
+                <span>through optimization</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🛡️</div>
+              <div>
+                <strong>20% crash reduction</strong>
+                <span>via rigorous code reviews</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary about-btn" id="aboutResumeBtn">Get Full Resume</button>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-card">
+            <h3>Quick Info</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-icon">📍</span>
+                <span>Bangalore, 560068</span>
+              </li>
+              <li>
+                <span class="info-icon">📱</span>
+                <a href="tel:+918310509448">+91 8310509448</a>
+              </li>
+              <li>
+                <span class="info-icon">✉️</span>
+                <a href="mailto:krishnaprasad.developer@gmail.com">krishnaprasad.developer@gmail.com</a>
+              </li>
+              <li>
+                <span class="info-icon">💼</span>
+                <a href="https://www.linkedin.com/in/krishnaprasad-r-a76445159/" target="_blank" rel="noopener">LinkedIn
+                  Profile</a>
+              </li>
+              <li>
+                <span class="info-icon">🐙</span>
+                <a href="https://github.com/krishnaprasad0" target="_blank" rel="noopener">GitHub Profile</a>
+              </li>
+            </ul>
+            <a href="mailto:krishnaprasad.developer@gmail.com" class="btn btn-primary full-width" id="hireBtn">Hire
+              Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" id="exp-branchx">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Flutter Developer</h3>
+                <p class="timeline-company">Branchx India Private Limited</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">07/2025 – Present</span>
+                <span class="timeline-location">📍 Bangalore</span>
+                <span class="timeline-badge current">Current</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Develop and maintain high-performance mobile applications for Android and iOS using Flutter.</li>
+              <li>Designed and implemented a <strong>POS (Point of Sale) system</strong> supporting real-time billing,
+                inventory management, and multi-display synchronization.</li>
+              <li>Integrated native Android and iOS code via platform channels to communicate with hardware (barcode
+                scanners, printers, sensors).</li>
+              <li>Optimized app performance for speed and responsiveness across various device configurations.</li>
+              <li>Integrated <strong>AI voice chat features</strong> in mobile apps and POS device running Android.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Flutter</span><span class="tag">Platform Channels</span><span
+                class="tag">POS</span><span class="tag">AI Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-vistas">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <p class="timeline-company">Vista's Learning</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">11/2024 – 07/2025</span>
+                <span class="timeline-location">📍 Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed cross-platform mobile applications in Flutter for Android and iOS.</li>
+              <li>Built and supported <strong>Android TV applications</strong> using Kotlin for interactive learning
+                experiences.</li>
+              <li>Integrated secure payment solutions including <strong>Paytm</strong> and third-party SDKs.</li>
+              <li>Monitored app stability with Firebase, Play Console, and App Store Connect.</li>
+              <li>Managed app deployments to Google Play Store and Apple App Store.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Flutter</span><span class="tag">Kotlin</span><span class="tag">Android TV</span><span
+                class="tag">Paytm</span><span class="tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-digiblock">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Flutter Developer</h3>
+                <p class="timeline-company">Digiblock Network</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">03/2024 – 10/2024</span>
+                <span class="timeline-location">📍 Kochi</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Converted Figma UI/UX designs into fully functional Flutter apps for B2C and B2B use cases.</li>
+              <li>Integrated multiple payment gateways: <strong>CCAvenue, Razorpay, and Tabby</strong>.</li>
+              <li>Deployed and published applications to both Apple App Store and Google Play Store.</li>
+              <li>Monitored crash reports and user feedback via App Store Connect and Play Console.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Flutter</span><span class="tag">Razorpay</span><span class="tag">CCAvenue</span><span
+                class="tag">Tabby</span><span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-wizklub">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Project Engineer</h3>
+                <p class="timeline-company">Wizklub Learning</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">02/2021 – 02/2024</span>
+                <span class="timeline-location">📍 Bangalore</span>
+              </div>
+            </div>
+            <ul class="timeline-list">
+              <li>Designed and developed high-performance Flutter applications for iOS and Android.</li>
+              <li>Implemented responsive and intuitive UI using Flutter with a focus on performance optimization.</li>
+              <li>Led code reviews and in-depth debugging, resulting in a <strong>20% reduction in app crashes</strong>.
+              </li>
+              <li>Collaborated with designers and backend developers to ensure on-time delivery and business alignment.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Code Review</span><span
+                class="tag">Performance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Achievements ===== -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Impact</span>
+        <h2 class="section-title">Key Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">⚡</div>
+          <div class="achievement-metric">40<span>%</span></div>
+          <h3>Dev Time Reduced</h3>
+          <p>Leveraged Flutter's hot reload, shared codebase, and pre-built widgets to achieve a 40% reduction in
+            development time compared to native development.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">📈</div>
+          <div class="achievement-metric">30<span>%</span></div>
+          <h3>Performance Boost</h3>
+          <p>Improved app performance by optimizing Flutter widget rendering, reducing network latency, and implementing
+            efficient state management using GetX and Bloc.</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🎨</div>
+          <div class="achievement-metric">25<span>%</span></div>
+          <h3>App Size Reduced</h3>
+          <p>Optimized app size using Flutter's Skia rendering engine, Tree Shaking, and improved animation smoothness
+            by 40% through Dart's async/await for non-blocking operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">📱</span> Mobile & Frameworks
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill primary">Flutter</span>
+            <span class="skill-pill primary">Dart</span>
+            <span class="skill-pill">Kotlin</span>
+            <span class="skill-pill">Bloc</span>
+            <span class="skill-pill">GetX</span>
+            <span class="skill-pill">Android TV</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">☁️</span> Backend & Cloud
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill primary">Firebase</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">AWS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🛠️</span> Tools & DevOps
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill primary">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">GitLab</span>
+            <span class="skill-pill">Jira</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">Slack</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">💳</span> Payment Gateways
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill primary">Razorpay</span>
+            <span class="skill-pill">CCAvenue</span>
+            <span class="skill-pill">Paytm</span>
+            <span class="skill-pill">Tabby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" id="proj-travel">
+          <div class="project-header">
+            <div class="project-icon">✈️</div>
+            <div class="project-links">
+              <a href="https://apps.apple.com/in/app/my-travellers-choice/id6503034274" target="_blank" rel="noopener"
+                class="project-link" aria-label="App Store B2C">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+              </a>
+              <a href="https://apps.apple.com/in/app/my-travellers-choice-b2b/id6503436269" target="_blank"
+                rel="noopener" class="project-link" aria-label="App Store B2B">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m7 14l7-7-1.41-1.42L12 14.17l-3.59-3.59L7 12l5 5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Travel App</h3>
+          <p class="project-desc">A comprehensive travel booking app offering attraction tickets, flight reservations,
+            and hotel bookings for B2B and B2C users. Features real-time availability and secure multi-gateway payments.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span><span class="tag">B2C/B2B</span><span class="tag">Payments</span><span
+              class="tag">iOS</span>
+          </div>
+          <div class="project-stores">
+            <a href="https://apps.apple.com/in/app/my-travellers-choice/id6503034274" target="_blank" rel="noopener"
+              class="store-badge">App Store (B2C)</a>
+            <a href="https://apps.apple.com/in/app/my-travellers-choice-b2b/id6503436269" target="_blank" rel="noopener"
+              class="store-badge">App Store (B2B)</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-student-learning">
+          <div class="project-header">
+            <div class="project-icon">🎓</div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.vista.vlearning" target="_blank" rel="noopener"
+                class="project-link" aria-label="Play Store">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3.18 23.76c.31.17.66.22 1.01.14l12.5-7.12-2.8-2.8-10.71 9.78zM.32 1.28C.12 1.6 0 2 0 2.46v19.08c0 .46.12.86.32 1.18l.06.06 10.68-10.68v-.25L.38 1.22l-.06.06zM20.13 10.4l-2.8-1.6-3.13 3.13 3.13 3.13 2.82-1.61c.8-.46.8-1.6-.02-2.05zM4.19.1L16.69 7.22l-2.8 2.8L3.18.24C3.5.06 3.88.01 4.19.1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Learning App</h3>
+          <p class="project-desc">An all-in-one educational app providing animated video lessons and interactive content
+            for Grades 1–10, covering all subjects and aligned with curriculum standards.</p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span><span class="tag">Education</span><span class="tag">Animation</span><span
+              class="tag">Android</span>
+          </div>
+          <div class="project-stores">
+            <a href="https://play.google.com/store/apps/details?id=com.vista.vlearning" target="_blank" rel="noopener"
+              class="store-badge">Play Store</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-staff-mgmt">
+          <div class="project-header">
+            <div class="project-icon">👨‍🏫</div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.vistaslearning.vsms.staff" target="_blank"
+                rel="noopener" class="project-link" aria-label="Play Store">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3.18 23.76c.31.17.66.22 1.01.14l12.5-7.12-2.8-2.8-10.71 9.78zM.32 1.28C.12 1.6 0 2 0 2.46v19.08c0 .46.12.86.32 1.18l.06.06 10.68-10.68v-.25L.38 1.22l-.06.06zM20.13 10.4l-2.8-1.6-3.13 3.13 3.13 3.13 2.82-1.61c.8-.46.8-1.6-.02-2.05zM4.19.1L16.69 7.22l-2.8 2.8L3.18.24C3.5.06 3.88.01 4.19.1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Staff Management App</h3>
+          <p class="project-desc">A powerful app to manage student profiles, attendance, performance, and communication
+            in real-time. Streamlines academic tracking, report generation, and parent-teacher interaction.</p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span><span class="tag">Management</span><span class="tag">Real-time</span><span
+              class="tag">Android</span>
+          </div>
+          <div class="project-stores">
+            <a href="https://play.google.com/store/apps/details?id=com.vistaslearning.vsms.staff" target="_blank"
+              rel="noopener" class="store-badge">Play Store</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-student-mgmt">
+          <div class="project-header">
+            <div class="project-icon">🏫</div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.vistaslearning.vsms.student" target="_blank"
+                rel="noopener" class="project-link" aria-label="Play Store">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3.18 23.76c.31.17.66.22 1.01.14l12.5-7.12-2.8-2.8-10.71 9.78zM.32 1.28C.12 1.6 0 2 0 2.46v19.08c0 .46.12.86.32 1.18l.06.06 10.68-10.68v-.25L.38 1.22l-.06.06zM20.13 10.4l-2.8-1.6-3.13 3.13 3.13 3.13 2.82-1.61c.8-.46.8-1.6-.02-2.05zM4.19.1L16.69 7.22l-2.8 2.8L3.18.24C3.5.06 3.88.01 4.19.1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management App</h3>
+          <p class="project-desc">A comprehensive school administration system handling admissions, staff management,
+            timetable scheduling, fee collection, and reporting to simplify operations.</p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span><span class="tag">Admin</span><span class="tag">School</span><span
+              class="tag">Android</span>
+          </div>
+          <div class="project-stores">
+            <a href="https://play.google.com/store/apps/details?id=com.vistaslearning.vsms.student" target="_blank"
+              rel="noopener" class="store-badge">Play Store</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h3>Bachelor of Computer Applications</h3>
+            <p class="edu-school">Sree Narayana Guru Open University</p>
+            <p class="edu-location">Kollam, Kerala</p>
+            <span class="edu-date">03/2024 – Ongoing</span>
+          </div>
+          <span class="edu-badge ongoing">Ongoing</span>
+        </div>
+        <div class="education-card reveal">
+          <div class="edu-icon">🏆</div>
+          <div class="edu-content">
+            <h3>Diploma in Computer Engineering</h3>
+            <p class="edu-school">Nettur Technical Training Foundation (NTTF)</p>
+            <p class="edu-location">Bangalore, Karnataka</p>
+            <span class="edu-date">10/2016 – 10/2019</span>
+          </div>
+          <span class="edu-badge completed">Completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'm always open to discussing new opportunities, exciting projects, or just a
+          friendly chat!</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:krishnaprasad.developer@gmail.com" class="contact-card reveal" id="emailCard">
+          <div class="contact-card-icon">✉️</div>
+          <h3>Email</h3>
+          <p>krishnaprasad.developer@gmail.com</p>
+          <span class="contact-action">Send Email →</span>
+        </a>
+        <a href="tel:+918310509448" class="contact-card reveal" id="phoneCard">
+          <div class="contact-card-icon">📱</div>
+          <h3>Phone</h3>
+          <p>+91 8310509448</p>
+          <span class="contact-action">Call Me →</span>
+        </a>
+        <a href="https://www.linkedin.com/in/krishnaprasad-r-a76445159/" target="_blank" rel="noopener"
+          class="contact-card reveal" id="linkedinCard">
+          <div class="contact-card-icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>Connect professionally</p>
+          <span class="contact-action">View Profile →</span>
+        </a>
+        <a href="https://github.com/krishnaprasad0" target="_blank" rel="noopener" class="contact-card reveal"
+          id="githubCard">
+          <div class="contact-card-icon">🐙</div>
+          <h3>GitHub</h3>
+          <p>Check my code</p>
+          <span class="contact-action">View Projects →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">KP<span class="dot">.</span></div>
+        <p class="footer-tagline">Building exceptional mobile experiences, one line at a time.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/krishnaprasad-r-a76445159/" target="_blank" rel="noopener"
+            class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/krishnaprasad0" target="_blank" rel="noopener" class="social-link"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+          <a href="mailto:krishnaprasad.developer@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.909v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.909 1.528-1.146C21.69 2.28 24 3.434 24 5.457z" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-copy">© 2026 Krishnaprasad R. Crafted with ❤️ in Bangalore.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Resume Download Modal ===== -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon">📄</div>
+        <h3>Download Resume</h3>
+        <p>Please provide your email to get my full professional profile.</p>
+      </div>
+      <form id="resumeForm" class="modal-form">
+        <div class="form-group">
+          <label for="visitorEmail">Email Address</label>
+          <input type="email" id="visitorEmail" placeholder="e.g. yourname@company.com" required>
+          <small class="error-msg" id="emailError">Please enter a valid email address.</small>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Validate & Download</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
